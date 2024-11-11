@@ -35,7 +35,7 @@ def any_to_decimal(number, system):
 def main():
     number = input("Enter a number (level 1 : if decimal - without prefix, if binary - with prefix 0b, level 2 : if hexadecimal - with prefix 0x, level 3 : 'number'x'system(1-16)' : ")
     while not (number[0:2] == "0b" or number.isdecimal() or number[0:2] == "0x" or number[-2] == 'x' or number[-3] == 'x'):
-        number = input("Enter a number (level 1 : if decimal - without prefix, if binary - with prefix 0b, level 2 : if hexadecimal - with prefix 0x) : ")
+        number = input("Enter a number (level 1 : if decimal - without prefix, if binary - with prefix 0b, level 2 : if hexadecimal - with prefix 0x, level 3 : 'number'x'system(1-16)') : ")
 
     if number[0:2] == '0b':
         print(f"Your number {number} in decimal - {binary_to_decimal(number[2:])}")
